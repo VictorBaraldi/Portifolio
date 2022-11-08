@@ -1,0 +1,116 @@
+@import "./global.css";
+@import "./intro.css";
+
+.header {
+  width: 100vw;
+  background-color: #e7e7e7;
+  border-bottom: 0.15rem solid #3e8bff;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.header nav img {
+  margin-right: 5rem;
+  height: 2rem;
+  margin-left: 10vw;
+  color: #000;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  justify-content: end;
+  margin-right: 10vw;
+}
+
+.header-menu li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    margin-right: 10vw;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  .header nav img {
+    height: 1.5rem;
+  }
+
+  .header-menu {
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    z-index: 1000;
+    background-color: #e7e7e7;
+    top: 60px;
+    height: 0px;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .header-menu a {
+    color: #000;
+    display: block;
+    padding: 1rem 0;
+    margin: 0 10vw;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .header-nav.active .header-menu {
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .header-nav {
+    justify-content: space-between;
+  }
+  .menu-hamburguer {
+    width: 20px;
+    border-top: 2px solid;
+  }
+
+  .menu-hamburguer::after,
+  .menu-hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .header-nav.active .menu-hamburguer {
+    border-top-color: transparent;
+  }
+
+  .header-nav.active .menu-hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .header-nav.active .menu-hamburguer::before {
+    transform: rotate(135deg);
+  }
+}
