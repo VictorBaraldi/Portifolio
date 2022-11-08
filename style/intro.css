@@ -1,13 +1,10 @@
-main {
-  width: 100%;
-}
-
 .intro {
-  margin-left: 10vw;
   margin-top: 8rem;
   display: grid;
-  grid-template-columns: 45rem 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
+  width: 100vw;
+  padding-left: 10%;
 }
 
 .intro-foto {

@@ -1,0 +1,13 @@
+.habilidades {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-left: 10%;
+}
+
+.habilidades-h2 {
+  margin: 0;
+  font-size: 9rem;
+  max-width: 20rem;
+  word-wrap: break-word;
+}
