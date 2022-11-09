@@ -1,0 +1,152 @@
+.formacao {
+  background-color: #141414;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 7rem;
+  grid-template-rows: max-content;
+}
+
+.formacao h2 {
+  margin: 0;
+  font-size: 9rem;
+  max-width: 20rem;
+  word-wrap: break-word;
+  color: #000;
+  margin-left: 10vw;
+  line-height: 9rem;
+  grid-row: 1 / -9;
+}
+
+.formacao-intro {
+  font-size: 1.5rem;
+  color: #a3a3a3;
+  line-height: 2.25rem;
+  margin: 1.5rem 10vw 1rem 0;
+  grid-area: auto;
+}
+
+.formacao-faculdade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formacao-faculdade section {
+  width: 15rem;
+  height: 13rem;
+  background-color: #000;
+  border: 1px solid #3d3d3d;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-left: 5rem;
+}
+
+.formacao-faculdade section p:first-child {
+  font-size: 0.9rem;
+  color: #a3a3a3;
+  margin-bottom: 0.7rem;
+}
+
+.formacao-faculdade section p:last-child {
+  font-size: 1.1rem;
+  color: #a3a3a3;
+  margin-top: 4rem;
+}
+
+.formacao-grd {
+  font-size: 1.1rem;
+  color: #fff;
+  z-index: 2;
+}
+
+.formacao-traco {
+  position: relative;
+  z-index: 1;
+  top: 1.7rem;
+  right: 0.7rem;
+}
+
+.formacao-cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+  grid-template-rows: 2.5rem repeat(3, 1.8rem);
+  padding-top: 3rem;
+}
+
+.formacao-cursos h3 {
+  grid-area: 1 / 1;
+  color: #8f8f8f;
+  z-index: 2;
+}
+
+.icon-livro {
+  position: relative;
+  top: 5.5rem;
+  right: 3rem;
+}
+
+.formacao-cursos p:nth-child(even) {
+  justify-self: end;
+  margin-right: 10vw;
+}
+
+.formacao-cursos p {
+  font-size: 0.9rem;
+}
+
+.formacao-idiomas h3 {
+  color: #8f8f8f;
+  z-index: 2;
+}
+
+.formacao-idiomas img {
+  position: relative;
+  z-index: 1;
+  top: 1.7rem;
+  right: 3rem;
+}
+
+.formacao-idiomas p {
+  color: #fff;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1400px) {
+  .formacao {
+    padding-top: 4rem;
+  }
+
+  .formacao h2 {
+    font-size: 7.5rem;
+  }
+
+  .formacao-intro {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .formacao-faculdade section {
+    width: 12rem;
+    height: 10rem;
+  }
+
+  .icon-livro {
+    top: 6.5rem;
+  }
+
+  .formacao-faculdade section p:first-child {
+    margin-bottom: 0.4rem;
+  }
+
+  .formacao-faculdade section p:last-child {
+    margin-top: 1.3rem;
+  }
+
+  .formacao-cursos {
+    margin: 0;
+    padding-top: 1rem;
+  }
+}

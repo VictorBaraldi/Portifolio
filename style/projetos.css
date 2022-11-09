@@ -1,0 +1,14 @@
+.projetos {
+  background-color: #000;
+  width: 100vw;
+  height: 1000px;
+  padding-top: 7rem;
+}
+
+.projetos h2 {
+  font-size: 9rem;
+  max-width: 20rem;
+  word-wrap: break-word;
+  color: #666666;
+  margin-left: 10vw;
+}
