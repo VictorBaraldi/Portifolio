@@ -150,3 +150,40 @@
     padding-top: 1rem;
   }
 }
+
+@media (max-width: 900px) {
+  .formacao {
+    padding-top: 4rem;
+  }
+
+  .formacao h2 {
+    font-size: 5.5rem;
+  }
+
+  .formacao-intro {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .formacao-faculdade section {
+    width: 12rem;
+    height: 10rem;
+  }
+
+  .icon-livro {
+    top: 6.5rem;
+  }
+
+  .formacao-faculdade section p:first-child {
+    margin-bottom: 0.4rem;
+  }
+
+  .formacao-faculdade section p:last-child {
+    margin-top: 1.3rem;
+  }
+
+  .formacao-cursos {
+    margin: 0;
+    padding-top: 1rem;
+  }
+}

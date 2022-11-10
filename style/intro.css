@@ -76,3 +76,21 @@ h4 {
     margin: 0 50%;
   }
 }
+
+@media (max-width: 500px) {
+  .intro-nome {
+    height: 6rem;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+  .intro-icons {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .intro-icons img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}

@@ -76,3 +76,30 @@
     height: 80px;
   }
 }
+
+@media (max-width: 900px) {
+  .habilidades-icons section {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .habilidades p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .habilidades-h2 {
+    font-size: 5rem;
+    max-width: 12rem;
+    word-wrap: break-word;
+    color: #e0e0e0;
+    margin-left: 10vw;
+    margin-right: 5vw;
+  }
+
+  .habilidades-icons section img {
+    width: 65px;
+    height: 65px;
+  }
+}
