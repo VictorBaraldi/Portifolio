@@ -1,4 +1,9 @@
+body {
+  background-color: #f5f5f5; 
+}
+
 .intro {
+  
   display: grid;
   align-content: center;
   grid-template-columns: 1fr 2fr;
@@ -24,6 +29,7 @@
   place-self: start;
   height: 12rem;
   grid-template-rows: min-content;
+  z-index: 1;
 }
 
 .intro-deco {
@@ -80,15 +86,41 @@ h4 {
 }
 
 @media (max-width: 500px) {
+  .intro {
+    padding: 0 10%;
+    grid-template-rows: auto;
+  }
+
+  .intro-deco {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    top: -8.5rem;
+  }
+
   .intro-nome {
     height: 6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-foto {
+    justify-self: center;
+    
   }
 
   .intro h1 {
     font-size: 3rem;
   }
+
+  .intro h3 {
+    font-size: 1rem;
+  }
+
   .intro-icons {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr 5fr;
+    padding: 0.5rem 0;
+    grid-template-rows: repeat(3, 3rem);
+    margin-bottom: 5rem;
   }
 
   .intro-icons img {

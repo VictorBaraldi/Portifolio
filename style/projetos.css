@@ -3,6 +3,7 @@
   width: 100vw;
   height: 1000px;
   padding-top: 7rem;
+  display: grid;
 }
 
 .projetos h2 {
@@ -11,4 +12,20 @@
   word-wrap: break-word;
   color: #666666;
   margin-left: 10vw;
+}
+
+@media (max-width:500px) {
+  .projetos {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-rows: auto;
+    padding-top: 3rem;
+  }
+
+
+  .projetos h2 {
+    font-size: 3rem;
+    word-wrap: normal;
+    margin: 0;
+  }
 }

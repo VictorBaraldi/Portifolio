@@ -14,6 +14,7 @@
   word-wrap: break-word;
   color: #cccccc;
   margin-left: 10vw;
+
 }
 
 .habilidades p {
@@ -106,16 +107,27 @@
 }
 
 @media (max-width: 500px) {
+
+  .habilidades {
+    grid-template-columns: 1fr;
+
+  }
+
   .habilidades-h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    word-wrap: normal;
+    color: #a3a3a3;
+    justify-self: center;
+    max-width: none;
     margin: 0;
-    font-size: 3.5rem;
-    color: #e0e0e0;
-    margin-left: 10vw;
-    grid-column: 1/-1;
+    padding: 0;
   }
 
   .habilidades p {
     grid-column: 1/-1; 
+    text-align: center;
+    margin: 1rem 1rem;
   }
     
   .habilidades-icons section img {
@@ -126,7 +138,8 @@
   .habilidades-icons {
    grid-template-columns: repeat(2, 1fr); 
    grid-column: 1 /-1;
-   margin: 0;
+   grid-row: 3;
+   margin: 3rem 0 0 0;
   }
   
   .habilidades-icons section {

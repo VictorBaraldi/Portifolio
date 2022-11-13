@@ -83,7 +83,7 @@
 
 .icon-livro {
   position: relative;
-  top: 5.5rem;
+  top: 2.7rem;
   right: 3rem;
 }
 
@@ -116,11 +116,12 @@
 
 @media (max-width: 1400px) {
   .formacao {
-    padding-top: 4rem ;
+    padding-top: 4rem;
   }
 
   .formacao h2 {
     font-size: 7.5rem;
+    max-width: 14rem;
   }
 
   .formacao-intro {
@@ -131,10 +132,6 @@
   .formacao-faculdade section {
     width: 12rem;
     height: 10rem;
-  }
-
-  .icon-livro {
-    top: 6.5rem;
   }
 
   .formacao-faculdade section p:first-child {
@@ -172,10 +169,6 @@
     margin-left: 0rem;
   }
 
-  .icon-livro {
-    top: 6.5rem;
-  }
-
   .formacao-faculdade section p:first-child {
     margin-bottom: 0.4rem;
   }
@@ -188,29 +181,73 @@
     margin: 0;
     padding-top: 1rem;
   }
+}
 
-  @media (max-width: 500px) {
-    .formacao h2 {
-      font-size: 3rem;
-      padding-right: 2rem;
-      line-height: 4rem;
-    }
+@media (max-width: 500px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-rows: auto;
+    padding-top: 3rem;
+  }
 
-    .formacao-faculdade section {
-      width: 10rem;
-      height: 8rem;
-      background-color: #000;
-      border: 1px solid #3d3d3d;
-      border-radius: 5px;
-      padding: 1rem;
-      margin-left: 1rem;
-    }
-    .formacao-faculdade {
-      grid-template-columns: 1fr;
-    }    
-    .formacao-intro {
-      font-size: 0.7rem;
-      line-height: 1rem;
-    }
+  .formacao h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    word-wrap: normal;
+    color: #a3a3a3;
+    margin: 0;
+    padding: 0;
+    grid-row: inherit;
+  }
+
+  .formacao-cursos h3 {
+    margin-bottom: 1rem;
+  }
+
+  .formacao-faculdade section {
+    width: 10rem;
+    height: 8.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .formacao-intro {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .formacao-faculdade section {
+    padding: 0.5rem;
+    
+  }
+
+  .formacao-faculdade section p:first-child {
+    margin-bottom: 0rem;
+  }
+
+  .formacao-faculdade section p:last-child {
+    margin-top: 0.7rem;
+  }
+
+  .formacao-cursos {
+    margin: 0;
+    padding-top: 1rem;
+    padding-left: 3rem;
+  }
+
+  .icon-livro {
+    left: 0;
+  }
+
+  .formacao-grd {
+    font-size: 0.8rem;
+  }
+
+
+  .formacao-idiomas {
+    justify-self: start;
+    margin-left: 3rem;
   }
 }
