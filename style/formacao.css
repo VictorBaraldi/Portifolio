@@ -183,7 +183,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .formacao {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -238,16 +238,19 @@
   }
 
   .icon-livro {
-    left: 0;
+    left: 0.5rem;
   }
 
   .formacao-grd {
     font-size: 0.8rem;
   }
 
-
   .formacao-idiomas {
     justify-self: start;
     margin-left: 3rem;
+  }
+
+  .formacao-idiomas img {
+    left: -2.3rem;
   }
 }
