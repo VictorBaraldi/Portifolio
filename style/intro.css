@@ -54,8 +54,8 @@ body {
   height: 3.5rem;
 }
 .icon-whatsapp {
-  width: 4rem;
-  height: 4rem;
+  width: 4.2rem;
+  height: 4.2rem;
 }
 
 .icon-email {
@@ -117,13 +117,24 @@ h4 {
 
   .intro-icons {
     grid-template-columns: 1fr 5fr;
-    padding: 0.5rem 0;
+    padding: 0.7rem 0;
     grid-template-rows: repeat(3, 3rem);
     margin-bottom: 5rem;
   }
 
-  .intro-icons img {
+  .icon-email {
     width: 2.2rem;
-    height: 2.2rem;
+    height:   2.2rem;
+  }
+  .icon-whatsapp {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-left: -0.9vw;
+  }
+
+  .icon-linkedin{
+    width: 2rem;
+    height:   2rem;
+    margin-left: 0.7vw;
   }
 }

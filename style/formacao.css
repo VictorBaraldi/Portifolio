@@ -83,7 +83,7 @@
 
 .icon-livro {
   position: relative;
-  top: 2.7rem;
+  top: 2.55rem;
   right: 3rem;
 }
 
@@ -117,11 +117,13 @@
 @media (max-width: 1400px) {
   .formacao {
     padding-top: 4rem;
+    height: 120vh;
   }
 
   .formacao h2 {
     font-size: 7.5rem;
     max-width: 14rem;
+    line-height: 7.5rem;
   }
 
   .formacao-intro {
@@ -151,11 +153,14 @@
 @media (max-width: 900px) {
   .formacao {
     padding-top: 4rem;
+    
   }
 
   .formacao h2 {
-    font-size: 5.5rem;
+    font-size: 5rem;
     padding-right: 2rem;
+    line-height: 5rem;
+    max-width: 11.5rem;
   }
 
   .formacao-intro {
@@ -199,6 +204,7 @@
     margin: 0;
     padding: 0;
     grid-row: inherit;
+    max-width: 20rem;
   }
 
   .formacao-cursos h3 {

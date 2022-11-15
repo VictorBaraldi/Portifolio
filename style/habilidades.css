@@ -14,7 +14,7 @@
   word-wrap: break-word;
   color: #cccccc;
   margin-left: 10vw;
-
+  line-height: 9rem;
 }
 
 .habilidades p {
@@ -71,6 +71,7 @@
     word-wrap: break-word;
     color: #e0e0e0;
     margin-left: 10vw;
+    line-height: 7.5rem;
   }
 
   .habilidades-icons section img {
@@ -98,6 +99,7 @@
     color: #e0e0e0;
     margin-left: 10vw;
     margin-right: 5vw;
+    line-height: 5rem;
   }
 
   .habilidades-icons section img {
