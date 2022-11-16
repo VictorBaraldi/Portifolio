@@ -210,9 +210,14 @@
   }
 
   .formacao-faculdade div {
-    width: 40vw;
+    width: 35vw;
     height: 8.5rem;
   }
+
+  .formacao-faculdade div:last-child {
+    justify-self: flex-end;
+  }
+
   .formacao-faculdade {
     width: 80vw;
     padding: 0;
@@ -255,7 +260,7 @@
   }
 
   .formacao-idiomas img {
-    left: -2.3rem;
+    left: -2rem;
   }
 
   .formacao-cursos h3,

@@ -45,7 +45,7 @@ body {
 
 .intro-icons {
   display: grid;
-  grid-template-columns: 4.5rem 5rem 4.5rem 6rem 4.5rem 6rem;
+  grid-template-columns:  4.5rem 6rem 4.5rem 5rem 4.5rem 6rem;
   align-items: center;
   grid-row: 3;
 }
@@ -53,12 +53,8 @@ body {
   width: 3.5rem;
   height: 3.5rem;
 }
-.icon-whatsapp {
-  width: 4.2rem;
-  height: 4.2rem;
-}
 
-.icon-email {
+.icon-email, .icon-whatsapp {
   width: 3.8rem;
   height: 3.8rem;
 }
@@ -123,20 +119,17 @@ h4 {
     margin-bottom: 5rem;
   }
 
-  .icon-email {
+  .icon-email, .icon-whatsapp {
     width: 2.2rem;
     height:   2.2rem;
+    margin-left: 0.1rem;
   }
-  .icon-whatsapp {
-    width: 2.6rem;
-    height: 2.6rem;
-    margin-left: -0.9vw;
-  }
+
 
   .icon-linkedin{
     width: 2rem;
     height:   2rem;
-    margin-left: 0.7vw;
+    margin-left: 0.6vw;
   }
 }
 
