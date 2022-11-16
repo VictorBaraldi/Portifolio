@@ -88,7 +88,8 @@ h4 {
 @media (max-width: 600px) {
   .intro {
     padding: 0 10%;
-    grid-template-rows: 130px 30px 180px 100px;
+    grid-template-rows: auto;
+    height: 100vh;
   }
 
   .intro-deco {
@@ -136,5 +137,11 @@ h4 {
     width: 2rem;
     height:   2rem;
     margin-left: 0.7vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro {
+    height: 110vh;
   }
 }

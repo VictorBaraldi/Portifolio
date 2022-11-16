@@ -33,7 +33,7 @@
   margin-right: 10%;
 }
 
-.habilidades-icons section {
+.habilidades-icons div {
   justify-self: center;
   width: 10.5rem;
   height: 10.5rem;
@@ -44,17 +44,17 @@
   place-content: center;
   border-radius: 5px;
 }
-.habilidades-icons section:hover {
+.habilidades-icons div:hover {
   transform: scale(1.2);
 }
 
-.habilidades-icons section img {
+.habilidades-icons div img {
   width: 7rem;
   height: 7rem;
 }
 
 @media (max-width: 1400px) {
-  .habilidades-icons section {
+  .habilidades-icons div {
     width: 8rem;
     height: 8rem;
     margin-bottom: 4rem;
@@ -74,14 +74,14 @@
     line-height: 7.5rem;
   }
 
-  .habilidades-icons section img {
+  .habilidades-icons div img {
     width: 80px;
     height: 80px;
   }
 }
 
 @media (max-width: 900px) {
-  .habilidades-icons section {
+  .habilidades-icons div {
     width: 6rem;
     height: 6rem;
     margin-bottom: 4rem;
@@ -102,7 +102,7 @@
     line-height: 5rem;
   }
 
-  .habilidades-icons section img {
+  .habilidades-icons div img {
     width: 65px;
     height: 65px;
   }
@@ -133,7 +133,7 @@
     margin: 1rem 1rem;
   }
     
-  .habilidades-icons section img {
+  .habilidades-icons div img {
     width: 5rem;
     height: 5rem;
   }
@@ -145,7 +145,7 @@
    margin: 3rem 0 0 0;
   }
   
-  .habilidades-icons section {
+  .habilidades-icons div {
     width: 7rem;
     height: 7rem;
   }
