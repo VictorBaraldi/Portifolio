@@ -1,27 +1,15 @@
 body {
-  background-color: #f5f5f5; 
+  background-color: #f5f5f5;
 }
 
 .intro {
   display: grid;
   align-content: center;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
-  width: 100vw;
-  height: calc(100vh - 70px);
-  padding-left: 20%;
+  height: calc(90vh - 70px);
   grid-template-rows: 200px 25px 120px;
   background-color: #f5f5f5;
-}
-
-.intro-foto {
-  width: 360px;
-  height: 360px;
-  background: #e7e7e7;
-  grid-column: 2;
-  grid-row: 1 / -4;
-  justify-self: end;
-  margin-right: 10vw;
 }
 
 .intro-nome {
@@ -45,7 +33,7 @@ body {
 
 .intro-icons {
   display: grid;
-  grid-template-columns:  4.5rem 6rem 4.5rem 5rem 4.5rem 6rem;
+  grid-template-columns: 4.5rem 6rem 4.5rem 5rem 4.5rem 6rem;
   align-items: center;
   grid-row: 3;
 }
@@ -54,7 +42,8 @@ body {
   height: 3.5rem;
 }
 
-.icon-email, .icon-whatsapp {
+.icon-email,
+.icon-whatsapp {
   width: 3.8rem;
   height: 3.8rem;
 }
@@ -69,7 +58,7 @@ h4 {
     margin-top: -3rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 10rem auto;
-    padding-left: 20%;
+
     align-items: flex-start;
   }
   .intro-foto {
@@ -83,8 +72,8 @@ h4 {
 
 @media (max-width: 600px) {
   .intro {
-    padding: 0 10%;
-    grid-template-rows: auto;
+    padding-top: 100px;
+    width: 100%;
     height: 100vh;
   }
 
@@ -101,7 +90,6 @@ h4 {
 
   .intro-foto {
     justify-self: center;
-    
   }
 
   .intro h1 {
@@ -119,16 +107,16 @@ h4 {
     margin-bottom: 5rem;
   }
 
-  .icon-email, .icon-whatsapp {
+  .icon-email,
+  .icon-whatsapp {
     width: 2.2rem;
-    height:   2.2rem;
+    height: 2.2rem;
     margin-left: 0.1rem;
   }
 
-
-  .icon-linkedin{
+  .icon-linkedin {
     width: 2rem;
-    height:   2rem;
+    height: 2rem;
     margin-left: 0.6vw;
   }
 }
