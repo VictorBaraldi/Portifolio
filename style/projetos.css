@@ -4,14 +4,31 @@
   height: 1000px;
   padding-top: 7rem;
   display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .projetos h2 {
   font-size: 9rem;
-  max-width: 20rem;
+  max-width: 18rem;
   word-wrap: break-word;
   color: #666666;
   margin-left: 10vw;
+}
+
+.projetos span {
+  margin-right: 100px;
+}
+
+.projetos-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-right: 10vw;
+}
+
+.projetos-img img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 @media (max-width: 600px) {
@@ -31,5 +48,9 @@
     padding: 0;
     grid-row: inherit;
     max-width: 20rem;
+  }
+
+  .projetos span {
+    margin-right: 0px;
   }
 }

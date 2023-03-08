@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Victor - Desenvolvedor Front End</title>
-  <link rel="stylesheet" href="./style/style.min.css" />
+  <link rel="stylesheet" href="./style/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -115,11 +115,35 @@
   </section>
 
   <section class="projetos" id="projetos">
-    <h2>PROJETOS</h2>
-    <div></div>
+    <h2>PRO<span class="projetos-span">JE</span>TOS</h2>
+    <div class="projetos-img">
+      <div class="">
+        <img src="assets/animais.png" alt="" data-modal="abrir" id="0">
+      </div>
+
+    </div>
   </section>
 
-  <script src="./scripts/script.js"></script>
+  <section class="modal-container " data-modal="container">
+    <div class="modal-section">
+      <div class="modal-img">
+        <img src="assets/animais.png" alt="">
+      </div>
+      <div class="modal-info">
+        <div class="modal-title">
+          <h2></h2>
+          <button data-modal="fechar" class="fechar">X</button>
+        </div>
+        <p></p>
+        <div class="modal-links">
+          <a href="" class="link-project" target="_blank">Acessar projeto</a>
+          <a href="" class="link-repositorio" target="_blank">Acessar repositório</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./scripts/script.js" type="module"></script>
 </body>
 
 </html>

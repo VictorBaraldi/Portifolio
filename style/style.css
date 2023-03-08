@@ -1,9 +1,9 @@
-@import "./global.css";
-@import "./intro.css";
-@import "./habilidades.css";
-@import "./formacao.css";
-@import "./projetos.css";
-
+@import './global.css';
+@import './intro.css';
+@import './habilidades.css';
+@import './formacao.css';
+@import './projetos.css';
+@import './modal.css';
 .header {
   width: 100%;
   background-color: #000000;
@@ -97,7 +97,7 @@
 
   .menu-hamburguer::after,
   .menu-hamburguer::before {
-    content: "";
+    content: '';
     display: block;
     width: 20px;
     height: 2px;

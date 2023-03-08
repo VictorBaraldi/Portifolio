@@ -1,31 +1,12 @@
-const btnMobile = document.querySelector(".btn-mobile");
-const sobreBtn= document.querySelector(".sobre-btn");
-const habBtn= document.querySelector(".hab-btn");
-const formBtn= document.querySelector(".form-btn");
-const projBtn= document.querySelector(".proj-btn");
+import MenuMobile from './components/mobile.js';
+import Scroll from './components/scroll.js';
+import Modal from './components/modal.js';
 
-btnMobile.addEventListener("click", function () {
-  const nav = document.querySelector(".header-nav");
-  nav.classList.toggle("active");
-});
+const menuMobile = new MenuMobile();
+menuMobile.init();
 
-sobreBtn.addEventListener("click", function () {
-  const nav = document.querySelector(".header-nav");
-  nav.classList.toggle("active");
-});
+const scroll = new Scroll("a[href^='#']");
+scroll.init();
 
-formBtn.addEventListener("click", function () {
-  const nav = document.querySelector(".header-nav");
-  nav.classList.toggle("active");
-});
-
-habBtn.addEventListener("click", function () {
-  const nav = document.querySelector(".header-nav");
-  nav.classList.toggle("active");
-});
-
-projBtn.addEventListener("click", function () {
-  const nav = document.querySelector(".header-nav");
-  nav.classList.toggle("active");
-});
-
+const modal = new Modal();
+modal.init();
